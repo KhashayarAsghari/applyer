@@ -1,0 +1,58 @@
+.footer {
+    background-color: $color-dark-lighter;
+    color: white;
+    border-top: 2px dashed white;
+    
+
+    
+
+    &__logo {
+        margin-top: 2rem;
+        margin-right: 10%;
+        height: 40px;
+    }
+
+    &__container {
+        @include dflex(space-between, flex-start, row, wrap);
+        gap: 1rem;
+        margin: 1rem 10%;
+
+        &__desc {
+            margin-top: 2rem;
+        }
+        &__list {
+
+            &__ul {
+                list-style-type: none;
+                margin-left: 1rem;
+                padding: 0;
+                padding-left: 1rem;
+            }
+        }
+
+        &__socials {
+
+            &__title {
+                font-weight: normal;
+
+            }
+
+            &__icons {
+                @include dflex(space-between);
+                margin-top: 1rem;
+            }
+
+            &__icons > i {
+                font-size: 2rem;
+                
+            }
+        }
+    }
+
+    &__ownership {
+        background-color: $color-dark;
+        padding: 1rem 5%;
+        font-size: .8rem;
+        text-align: center;
+    }
+}
