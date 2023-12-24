@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+.header {
+  background-color: #fff;
+}
+.header__container {
+  width: 90%;
+  margin: 0px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0.9rem 0;
+}
+.header__container__bars {
+  color: #1a2239;
+}
+
+.main-heading {
+  display: none;
+}
+
+.intro {
+  margin-top: 2rem;
+}
+.intro__heading {
+  color: #1a2239;
+  text-align: center;
+}
+.intro__heading > span {
+  color: #d1481e;
+}
+.intro__description {
+  width: 90%;
+  margin: 0px auto;
+  text-align: center;
+  color: #68696d;
+  margin-top: 1rem;
+}
+.intro__button {
+  display: block;
+  width: 90%;
+  margin: 0px auto;
+  color: white;
+  text-align: center;
+  padding: 0.8rem 0;
+  background-color: #d1481e;
+  border-radius: 8px;
+  margin: 1rem auto;
+}/*# sourceMappingURL=main.css.map */

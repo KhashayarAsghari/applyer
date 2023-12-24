@@ -1,0 +1,31 @@
+.intro {
+    margin-top: $margin-xxxl;
+
+    &__heading {
+        color: $color-dark;
+        text-align: center;
+
+        & > span {
+            color: $color-accent;
+        }
+    }
+
+    &__description {
+        @include widthauto(90%);
+        text-align: center;
+        color: $color-text-gray;
+        margin-top: $margin-xl;
+       
+    }
+
+    &__button {
+        display: block;
+        @include widthauto(90%);
+        color: white;
+        text-align: center;
+        padding: $padding-m 0;
+        background-color: $color-accent;
+        border-radius: $border-rad-l;
+        margin: $margin-xl auto;
+    }
+}

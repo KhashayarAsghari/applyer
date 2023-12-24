@@ -1,0 +1,14 @@
+.header {
+    background-color: $color-bg-main;
+
+    &__container {
+        @include widthauto(90%);
+        @include dflex(space-between);
+        padding: $padding-l 0;
+
+        &__bars {
+            color: $color-dark;
+        }
+    }
+}
+
