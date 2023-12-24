@@ -10,16 +10,32 @@
 
     &__header {
         @include dflex(flex-start,center,row,nowrap);
+        padding: 8px;
         gap: 1rem;
 
+        &__img {
+            width: 60px;
+            height: 60px
+        }
+
         &__stats {
-            @include dflex(center, flex-start, column, nowrap);
+            @include dflex(space-between, flex-start, column, nowrap);
             text-align: start;
+
+            &__name {
+                font-weight: normal;
+            }
 
             &__edu {
                 margin: 0;
+                color: $color-text-gray;
             }
         }
+    }
+
+    &__text {
+        text-align: start;
+        padding: 8px;
     }
 }
 

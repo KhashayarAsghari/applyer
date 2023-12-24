@@ -24,6 +24,9 @@
         margin-top: 3rem;
         overflow-x: auto;
         white-space: nowrap;
+     
+
+       
     }
 
     &__navigator {
@@ -74,3 +77,16 @@
         }
     }
 }
+
+.temp-container {
+    position: relative;
+
+    &__quote-mark {
+        position: absolute;
+        top: -2rem;
+        right: 2rem;
+        font-size: 4rem;
+        color: $color-accent;
+    }
+}
+

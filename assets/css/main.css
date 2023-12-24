@@ -208,6 +208,7 @@ h1, h2, h3, h4, h5, h6, p {
 .countries__question {
   text-align: center;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 .countries__question > span {
   color: #d1481e;
@@ -458,6 +459,17 @@ h1, h2, h3, h4, h5, h6, p {
   color: #d1481e;
 }
 
+.temp-container {
+  position: relative;
+}
+.temp-container__quote-mark {
+  position: absolute;
+  top: -2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: #d1481e;
+}
+
 .comment-card {
   display: inline-block;
   margin-left: 1rem;
@@ -484,15 +496,20 @@ h1, h2, h3, h4, h5, h6, p {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 8px;
   gap: 1rem;
+}
+.comment-card__header__img {
+  width: 60px;
+  height: 60px;
 }
 .comment-card__header__stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -504,8 +521,16 @@ h1, h2, h3, h4, h5, h6, p {
       flex-wrap: nowrap;
   text-align: start;
 }
+.comment-card__header__stats__name {
+  font-weight: normal;
+}
 .comment-card__header__stats__edu {
   margin: 0;
+  color: #68696d;
+}
+.comment-card__text {
+  text-align: start;
+  padding: 8px;
 }
 
 .comment-card:first-child {
@@ -681,6 +706,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .footer__container__desc {
   margin-top: 2rem;
+  max-width: 400px;
 }
 .footer__container__list__ul {
   list-style-type: none;
