@@ -1,0 +1,50 @@
+.how {
+    background-image: url(../images/backgrounds/dottedTop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    margin-top: 10rem;
+
+    padding: 0 10%;
+    padding-top: 20rem;
+    padding-bottom: 5rem;
+    position: relative;
+    text-align: center;
+
+
+    &__top-img {
+        display: block;
+        @include widthauto(80%);
+        max-width: 300px;
+        position: absolute;
+        top: -7rem;
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    &__title {
+        
+    }
+
+    &__item {
+
+        @include dflex(center, center, column, no-wrap);
+        margin-top: 3rem;
+        &__icon {
+            color: $color-dark-lighter;
+            font-size: 2rem;
+        }
+
+        &__title {
+            margin-top: $margin-l;
+           
+        }
+
+        &__desc {
+            color: $color-text-gray;
+        }
+
+
+    }
+
+}

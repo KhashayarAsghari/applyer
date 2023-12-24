@@ -75,4 +75,55 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #d1481e;
   border-radius: 8px;
   margin: 1rem auto;
+}
+
+.how {
+  background-image: url(../images/backgrounds/dottedTop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 10rem;
+  padding: 0 10%;
+  padding-top: 20rem;
+  padding-bottom: 5rem;
+  position: relative;
+  text-align: center;
+}
+.how__top-img {
+  display: block;
+  width: 80%;
+  margin: 0px auto;
+  max-width: 300px;
+  position: absolute;
+  top: -7rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.how__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  margin-top: 3rem;
+}
+.how__item__icon {
+  color: #2f3281;
+  font-size: 2rem;
+}
+.how__item__title {
+  margin-top: 0.9rem;
+}
+.how__item__desc {
+  color: #68696d;
 }/*# sourceMappingURL=main.css.map */
