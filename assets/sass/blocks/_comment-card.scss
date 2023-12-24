@@ -37,8 +37,16 @@
         text-align: start;
         padding: 8px;
     }
+
+    @media (min-width: 768px) {
+        border: none;
+    }
 }
 
 .comment-card:first-child {
     margin-right: 10%;
+
+    @media (min-width: 768px) {
+        margin-right: 0;
+    }
 }

@@ -555,6 +555,9 @@ h1, h2, h3, h4, h5, h6, p {
   display: block;
 }
 @media (min-width: 768px) {
+  .process {
+    margin-bottom: 3rem;
+  }
   .process__title {
     font-size: 2rem;
   }
@@ -714,9 +717,60 @@ h1, h2, h3, h4, h5, h6, p {
 .comments__team__title > span {
   color: #d1481e;
 }
+@media (min-width: 768px) {
+  .comments__title {
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+  .comments__subtitle {
+    font-size: 2rem;
+  }
+  .comments__navigator {
+    width: 60%;
+    margin: 0px auto;
+    margin-top: 2rem;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .comments__navigator__btn {
+    width: 50px;
+    height: 50px;
+  }
+  .comments__team {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 80%;
+    margin: 0px auto;
+    gap: 2rem;
+    margin-top: 7rem;
+    max-width: 700px;
+  }
+  .comments__team__title {
+    max-width: 280px;
+    text-align: start;
+  }
+}
 
 .temp-container {
   position: relative;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0px auto;
 }
 .temp-container__quote-mark {
   position: absolute;
@@ -788,9 +842,19 @@ h1, h2, h3, h4, h5, h6, p {
   text-align: start;
   padding: 8px;
 }
+@media (min-width: 768px) {
+  .comment-card {
+    border: none;
+  }
+}
 
 .comment-card:first-child {
   margin-right: 10%;
+}
+@media (min-width: 768px) {
+  .comment-card:first-child {
+    margin-right: 0;
+  }
 }
 
 .faq {

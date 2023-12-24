@@ -20,6 +20,7 @@
         font-size: 1.3rem;
     }
 
+
     &__container {
         margin-top: 3rem;
         overflow-x: auto;
@@ -54,11 +55,6 @@
     &__team {
         margin-top: 6rem;
         @include dflex(flex-start, center, column, nowrap);
-        
-        // position: absolute;
-        // left: 50%;
-        // transform: translateX(-50%);
-        // bottom: -3rem;
 
         &__img {
             display: block;
@@ -76,10 +72,49 @@
             color: $color-accent;
         }
     }
+
+    @media (min-width: 768px) {
+        
+        
+        &__title {
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        &__subtitle {
+            font-size: 2rem;
+        }
+
+        &__navigator {
+            @include widthauto(60%);
+            margin-top: 2rem;
+            justify-content: flex-end;
+
+            &__btn {
+                width: 50px;
+                height: 50px;
+            }
+        }
+
+        &__team {
+            @include dflex(center, center, row-reverse);
+            @include widthauto(80%);
+            gap: 2rem;
+            margin-top: 7rem;
+            max-width: 700px;
+
+            &__title {
+                max-width: 280px;
+                text-align: start;
+            }
+        }
+    }
 }
 
 .temp-container {
     position: relative;
+    width: max-content;
+    margin: 0px auto;
 
     &__quote-mark {
         position: absolute;
