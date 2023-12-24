@@ -61,8 +61,50 @@
         }
     }
 
-    &__step:not(.process__step:nth-child(3)) > .process__step__dots {
+    &__step:not(.process__step:nth-child(1)) > .process__step__dots {
         display: block;
         
+    }
+
+    @media (min-width: 768px){
+        &__title {
+            font-size: 2rem;
+        }
+
+        &__subtitle {
+            font-size: 1.8rem;
+        }
+
+        .process-container {
+            @include dflex(space-between,center, row, nowrap);
+            gap: 1rem;
+            max-width: 1000px;
+            margin: 0 auto;
+            
+        }
+
+        &__step {
+            @include dflex(flex-start, center, column, nowrap);
+            
+            &__desc {
+
+                &__title {
+                    text-align: center;
+                }
+
+                &__description {
+                    text-align: center;
+                }
+            }
+
+            &__dots {
+                transform: rotate(90deg);
+                top: -22%;
+                right: -2.5rem;
+                height: 160px;
+            }
+        }
+
+       
     }
 }
