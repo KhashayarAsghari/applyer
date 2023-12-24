@@ -1,0 +1,51 @@
+.countries {
+    padding: 0 10%;
+
+    &__title {
+        font-size: 1rem;
+        color: $color-text-gray;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    &__question {
+        text-align: center;
+        margin-top: 1rem;
+
+        & > span {
+            color: $color-accent;
+        }
+    }
+
+    &__card {
+        background-color: white;
+        box-shadow: 0 0 10px 10px #f2f2f2;
+        @include widthauto(90%);
+        border-radius: 3rem;
+        @include dflex(center, center, column, nowrap);
+        margin-bottom: 2rem;
+        padding: 2rem 0;
+
+        &__img {
+            width: 120px;
+        }
+
+        &__desc {
+            @include dflex(space-between);
+            @include widthauto(85%);
+            margin-top: 2rem;
+            
+            &__text {
+                font-weight: normal;
+            }
+
+            &__icon {
+                background-color: #e2e4fd;
+                padding: 10px;
+                border-radius: 50px;
+                
+
+            }
+        }
+    }
+}
