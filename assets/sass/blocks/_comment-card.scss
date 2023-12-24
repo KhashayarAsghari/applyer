@@ -1,0 +1,28 @@
+.comment-card {
+    display: inline-block;
+    margin-left: 1rem;
+    width: 300px;
+    border: 1px solid #aaa;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    white-space: wrap;
+
+    &__header {
+        @include dflex(flex-start,center,row,nowrap);
+        gap: 1rem;
+
+        &__stats {
+            @include dflex(center, flex-start, column, nowrap);
+            text-align: start;
+
+            &__edu {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.comment-card:first-child {
+    margin-right: 10%;
+}
