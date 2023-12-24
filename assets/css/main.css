@@ -13,7 +13,7 @@ a {
           box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
 
@@ -558,4 +558,81 @@ h1, h2, h3, h4, h5, h6 {
 .faq__body__item__desc {
   padding: 1rem;
   display: none;
+}
+
+.articles {
+  text-align: center;
+  margin-top: 4rem;
+}
+.articles__title {
+  width: 80%;
+  margin: 0px auto;
+}
+.articles__container {
+  text-align: start;
+  margin-top: 3rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.articles__show-all {
+  width: 80%;
+  margin: 0px auto;
+  color: #d1481e;
+  border: 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.5rem 0;
+  margin-top: 2rem;
+}
+
+.article {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 280px;
+  white-space: wrap;
+  text-align: start;
+}
+.article__img {
+  border-radius: 1rem;
+  width: 100%;
+}
+.article__desc__title {
+  font-size: 1.2rem;
+}
+.article__desc__text {
+  color: #68696d;
+}
+.article__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  margin: 1rem 0;
+}
+.article__footer__date {
+  color: #68696d;
+}
+.article__footer__more-container {
+  color: #2f3281;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.article:first-child {
+  margin-right: 10%;
 }/*# sourceMappingURL=main.css.map */
