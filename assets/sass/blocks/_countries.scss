@@ -49,4 +49,19 @@
             }
         }
     }
+
+    @media (min-width: 768px) {
+
+        margin-top: 10rem;
+        .countries-container {
+            @include widthauto(80%);
+            @include dflex();
+            gap: 1rem;
+            max-width: 1000px;
+        }
+
+        &__card {
+            max-width: 300px;
+        }
+    }
 }

@@ -305,8 +305,6 @@ h1, h2, h3, h4, h5, h6, p {
       flex-wrap: nowrap;
   gap: 1rem;
   padding: 1rem 10%;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, white), color-stop(70%, rgba(234, 234, 234, 0.759)), color-stop(90%, white));
-  background: linear-gradient(to bottom, white 20%, rgba(234, 234, 234, 0.759) 70%, white 90%);
 }
 .counceling__item__image-container {
   width: 60px;
@@ -330,6 +328,8 @@ h1, h2, h3, h4, h5, h6, p {
       flex-shrink: 0;
   background-color: white;
   border-radius: 500px;
+  -webkit-box-shadow: 5px 5px 10px 10px rgb(248, 248, 248);
+          box-shadow: 5px 5px 10px 10px rgb(248, 248, 248);
 }
 .counceling__item__image-container__img {
   width: 35px;
@@ -337,6 +337,32 @@ h1, h2, h3, h4, h5, h6, p {
 .counceling__item__desc {
   text-align: start;
   color: #68696d;
+}
+@media (min-width: 768px) {
+  .counceling {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .counceling__top-img {
+    margin: 0;
+  }
+  .counceling__title {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
 }
 
 .countries {
@@ -411,6 +437,35 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #e2e4fd;
   padding: 10px;
   border-radius: 50px;
+}
+@media (min-width: 768px) {
+  .countries {
+    margin-top: 10rem;
+  }
+  .countries .countries-container {
+    width: 80%;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 1rem;
+    max-width: 1000px;
+  }
+  .countries__card {
+    max-width: 300px;
+  }
 }
 
 .process {
