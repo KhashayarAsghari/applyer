@@ -267,4 +267,91 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e2e4fd;
   padding: 10px;
   border-radius: 50px;
+}
+
+.process {
+  margin-top: 5rem;
+  text-align: center;
+}
+.process__title {
+  color: #d1481e;
+}
+.process__subtitle {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+.process__step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 1.5rem;
+  width: 80%;
+  margin: 0px auto;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+.process__step__container-img {
+  background-color: #fdf3f1;
+  padding: 12px;
+  width: 70px;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 500px;
+  z-index: 5;
+}
+.process__step__container-img__img {
+  font-size: 1.5rem;
+  color: #d1481e;
+  z-index: inherit;
+}
+.process__step__desc {
+  text-align: start;
+}
+.process__step__desc__title {
+  font-weight: normal;
+}
+.process__step__desc__description {
+  color: #68696d;
+  margin: 0;
+}
+.process__step__dots {
+  position: absolute;
+  right: 0.5rem;
+  top: -100%;
+  display: none;
+  height: 130px;
+  width: 60px;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.process__step:not(.process__step:nth-child(3)) > .process__step__dots {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
