@@ -9,6 +9,50 @@
         &__bars {
             color: $color-dark;
         }
+
+        @media (min-width: 768px) {
+            display: none;
+        }
+
+        &--desk {
+            display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+                @include widthauto(80%);
+                @include dflex(space-between);
+
+                .navbar {
+                    @include dflex(flex-start, center, row, nowrap);
+                    padding: 1rem 0;
+                    gap: 2rem;
+                    &__logo {
+                        width: 60px;
+                    }
+
+                    &__item {
+                        color: $color-text-gray;
+
+                        &> i{
+                            font-size: .8rem;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+
+                &__counseling {
+                    padding: .5rem 2rem;
+                    background-color: $color-accent;
+                    color: white;
+                    border-radius: 8px;
+                    font-size: .8rem;
+                }
+            }
+        }
+
+
     }
+
+
 }
 

@@ -43,6 +43,72 @@ h1, h2, h3, h4, h5, h6, p {
 .header__container__bars {
   color: #1a2239;
 }
+@media (min-width: 768px) {
+  .header__container {
+    display: none;
+  }
+}
+.header__container--desk {
+  display: none;
+}
+@media (min-width: 768px) {
+  .header__container--desk {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .header__container--desk .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 1rem 0;
+    gap: 2rem;
+  }
+  .header__container--desk .navbar__logo {
+    width: 60px;
+  }
+  .header__container--desk .navbar__item {
+    color: #68696d;
+  }
+  .header__container--desk .navbar__item > i {
+    font-size: 0.8rem;
+    vertical-align: middle;
+  }
+  .header__container--desk__counseling {
+    padding: 0.5rem 2rem;
+    background-color: #d1481e;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.8rem;
+  }
+}
 
 .main-heading {
   display: none;
@@ -75,6 +141,49 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #d1481e;
   border-radius: 8px;
   margin: 1rem auto;
+}
+@media (min-width: 768px) {
+  .intro {
+    position: absolute;
+    top: 10rem;
+    right: 10%;
+    width: 40%;
+    text-align: start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    z-index: 10;
+  }
+  .intro__heading {
+    text-align: start;
+    font-size: 2.5rem;
+    margin-right: 5%;
+  }
+  .intro__description {
+    text-align: start;
+  }
+  .intro__button {
+    width: 70%;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin: 1rem 0;
+    margin-right: 5%;
+  }
+}
+@media (max-width: 940px) {
+  .intro__heading {
+    font-size: 1.5rem;
+  }
 }
 
 .how {
@@ -113,8 +222,8 @@ h1, h2, h3, h4, h5, h6, p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin-top: 3rem;
 }
 .how__item__icon {
@@ -126,6 +235,40 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .how__item__desc {
   color: #68696d;
+}
+@media (min-width: 768px) {
+  .how {
+    margin-top: 2rem;
+    padding-top: 50%;
+    padding-bottom: 20%;
+  }
+  .how__top-img {
+    top: 2rem;
+    left: 25%;
+  }
+  .how .how__items__flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    gap: 1.5rem;
+  }
+}
+@media (max-width: 940px) {
+  .how__top-img {
+    max-width: 250px;
+  }
 }
 
 .counceling {

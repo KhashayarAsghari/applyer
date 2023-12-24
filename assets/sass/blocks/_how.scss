@@ -24,7 +24,7 @@
 
     &__item {
 
-        @include dflex(center, center, column, no-wrap);
+        @include dflex(center, center, column, nowrap);
         margin-top: 3rem;
         &__icon {
             color: $color-dark-lighter;
@@ -42,5 +42,31 @@
 
 
     }
+
+    
+
+    @media (min-width: 768px) {
+        margin-top: 2rem;
+        padding-top: 50%;
+        padding-bottom: 20%;
+
+        &__top-img {
+            top: 2rem;
+            left: 25%;
+        }
+
+        .how__items__flex {
+            @include dflex(space-between, center);
+            gap: 1.5rem;
+        }
+    }
+
+    @media (max-width: 940px) {
+        &__top-img {
+            max-width: 250px;
+        }
+    }
+
+    
 
 }
