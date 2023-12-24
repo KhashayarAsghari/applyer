@@ -1,0 +1,14 @@
+.cooperations {
+    
+    margin-top: 3rem;
+
+    &__title {
+        color: $color-dark-lighter;
+        @include widthauto(80%);
+        text-align: center;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

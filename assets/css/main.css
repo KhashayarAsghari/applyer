@@ -635,4 +635,17 @@ h1, h2, h3, h4, h5, h6, p {
 
 .article:first-child {
   margin-right: 10%;
+}
+
+.cooperations {
+  margin-top: 3rem;
+}
+.cooperations__title {
+  color: #2f3281;
+  width: 80%;
+  margin: 0px auto;
+  text-align: center;
+}
+.cooperations__img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
