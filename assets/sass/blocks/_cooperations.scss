@@ -9,7 +9,11 @@
     }
 
     &__img {
-        width: 100%;
+        display: block;
+        width: 80%;
+        margin-top: 3rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     @media (min-width: 768px) {
