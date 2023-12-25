@@ -76,7 +76,7 @@
         }
 
         .process-container {
-            @include dflex(space-between,center, row, nowrap);
+            @include dflex(space-between,flex-start, row, nowrap);
             gap: 1rem;
             max-width: 1000px;
             margin: 0 auto;

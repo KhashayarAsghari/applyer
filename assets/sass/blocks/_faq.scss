@@ -18,6 +18,14 @@
         @include widthauto(80%);
         margin-top: 2rem;
 
+        &__item.selected .faq__body__item__desc {
+            display: block!important;
+        }
+
+        &__item.selected .faq__body__item__title__icon {
+            transform: rotate(90deg);
+        }
+
         &__item {
             box-shadow: 5px 5px 5px 5px #f0f0f0;
             
@@ -37,6 +45,7 @@
             &__desc {
                 padding: 1rem;
                 display: none;
+                color: $color-text-gray;
             }
 
 
