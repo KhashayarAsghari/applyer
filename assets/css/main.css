@@ -718,6 +718,10 @@ h1, h2, h3, h4, h5, h6, p {
   color: #d1481e;
 }
 @media (min-width: 768px) {
+  .comments {
+    background-size: 100% 100%;
+    background-position: top center;
+  }
   .comments__title {
     font-size: 1.5rem;
     font-weight: normal;
