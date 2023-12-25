@@ -19,7 +19,7 @@
         margin-top: 2rem;
 
         &__item {
-            box-shadow: 5px 5px 10px 10px #f0f0f0;
+            box-shadow: 5px 5px 5px 5px #f0f0f0;
             
             border-radius: 1rem;
             margin-bottom: 1rem;
@@ -43,5 +43,24 @@
         }
     }
 
+    @media (min-width: 768px) {
+        &__header {
+
+            &__title {
+                font-size: 1.5rem;
+                font-weight: normal;
+            }
+
+            &__subtitle {
+                font-size: 2rem;
+                
+            }
+        }
+
+        &__body {
+            margin-top: 4rem;
+            max-width: 1000px;
+        }
+    }
     
 }

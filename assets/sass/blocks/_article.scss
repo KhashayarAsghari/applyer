@@ -10,12 +10,15 @@
     }
 
     &__desc {
+        padding: .5rem;
         
         &__title {
-            font-size: 1.2rem;
+            font-size: 1rem;
+
         }
 
         &__text {
+            margin-top: .5rem;
             color: $color-text-gray;
         }
     }
@@ -39,4 +42,8 @@
 
 .article:first-child {
     margin-right: 10%;
+
+    @media (min-width: 768px) {
+        margin-right: 0;
+    }
 }

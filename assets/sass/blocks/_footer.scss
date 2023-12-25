@@ -56,4 +56,21 @@
         font-size: .8rem;
         text-align: center;
     }
+
+    @media (min-width: 768px) {
+        &__container {
+            padding-bottom: 2rem;
+
+            &__desc {
+                max-width: 200px;
+                margin-top: .7rem;
+            }
+
+            &__socials {
+                margin-top: .7rem;
+            }
+        }
+
+
+    }
 }
