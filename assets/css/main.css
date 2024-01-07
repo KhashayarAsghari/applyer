@@ -1255,4 +1255,35 @@ h1, h2, h3, h4, h5, h6, p {
   margin: auto;
   margin-top: 2rem;
   height: 350px;
+}
+
+.contact-keep-in-touch {
+  background-image: url(../images/backgrounds/dottedTop.svg);
+  background-position: 6% 563%;
+  background-size: 176% 91%;
+  background-repeat: no-repeat;
+  margin-top: 6rem;
+  padding: 0 5%;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+.contact-keep-in-touch__details__title {
+  font-size: 1.8rem;
+}
+.contact-keep-in-touch__details__desc {
+  color: #68696d;
+  font-size: 1.3rem;
+  font-weight: 300;
+  padding: 0.9rem;
+  margin-top: 1rem;
+}
+.contact-keep-in-touch__details__btn {
+  background-color: #3459a9;
+  color: white;
+  width: 100%;
+  padding: 1rem 0.2rem;
+  border-radius: 10px;
+}
+.contact-keep-in-touch__img {
+  margin-top: 5rem;
 }/*# sourceMappingURL=main.css.map */

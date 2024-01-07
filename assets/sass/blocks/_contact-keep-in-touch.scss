@@ -1,0 +1,38 @@
+.contact-keep-in-touch {
+    background-image: url(../images/backgrounds/dottedTop.svg);
+    background-position: 6% 563%;
+    background-size: 176% 91%;
+    background-repeat: no-repeat;
+    margin-top: 6rem;
+    padding: 0 5%;
+    padding-bottom: 3rem;
+    text-align: center;
+
+    &__details {
+
+        &__title {
+            font-size: 1.8rem;
+        }
+
+        &__desc {
+            color: $color-text-gray;
+            font-size: 1.3rem;
+            font-weight: 300;
+            padding: $padding-l;
+            margin-top: $margin-xl;
+        }
+
+        &__btn {
+            background-color: $color-blue;
+            color: white;
+            width: 100%;
+            padding: $padding-xl $padding-xs;
+            border-radius: $border-rad-xl;
+        }
+    }
+
+    &__img {
+        margin-top: 5rem;
+    }
+    
+}
