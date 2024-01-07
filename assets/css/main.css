@@ -1457,4 +1457,61 @@ h1, h2, h3, h4, h5, h6, p {
   color: #68696d;
   margin-top: 1rem;
   font-size: 1.3rem;
+}
+
+.team__title {
+  color: #68696d;
+  width: 90%;
+  margin: 0px auto;
+  font-size: 2rem;
+}
+.team__title > span {
+  color: #3459a9;
+}
+.team__desc {
+  width: 90%;
+  margin: 0px auto;
+  font-size: 1.3rem;
+  color: #68696d;
+  margin-top: 1rem;
+}
+.team__members-container {
+  overflow-x: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+.team__members-container__item {
+  display: inline-block;
+  width: 250px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.team__members-container__item__img {
+  border-radius: 1.2rem;
+  width: 100%;
+}
+.team__members-container__item__title {
+  color: #1a2239;
+}
+.team__members-container__item__post {
+  display: block;
+  color: #68696d;
+  margin-top: 0.9rem;
 }/*# sourceMappingURL=main.css.map */
