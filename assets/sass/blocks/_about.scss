@@ -1,0 +1,64 @@
+.about {
+    padding: $padding-xl 5%;
+    padding-bottom: 4rem;
+    background-image: url(../images/backgrounds/dottedBottom.svg);
+    background-position: 47% 102%;
+    background-size: 236% 128%;
+    background-repeat: no-repeat;
+
+    &__head {
+        margin-top: $margin-l;
+
+        &__title {
+            color: $color-blue;
+        }
+
+        &__subtitle {
+            color: rgb(69, 69, 69);
+            margin-top: $margin-xxxl;
+        }
+
+        &__desc {
+            color: $color-text-gray;
+            margin-top: 3rem;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__img {
+        margin-top: 4rem;
+        border-radius: 1.5rem;
+    }
+
+    &__cards-container {
+        margin-top: 3rem;
+
+        &__card {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+            border-radius: 2rem;
+            box-shadow: 0 0 8px 8px rgb(247, 247, 247);
+
+            &__head {
+                @include dflex(space-between);
+
+                &__title {
+                    color: $color-blue;
+                }
+
+                &__icon {
+                    font-size: 1.8rem;
+                    color: $color-blue;
+                }
+            }
+
+            &__desc {
+                color: $color-text-gray;
+                margin-top: $margin-xl;
+                font-size: 1.3rem;
+            }
+        }
+
+    }
+}

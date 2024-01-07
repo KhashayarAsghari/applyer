@@ -1389,4 +1389,72 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: center;
     margin-top: 0.9rem;
   }
+}
+
+.about {
+  padding: 1rem 5%;
+  padding-bottom: 4rem;
+  background-image: url(../images/backgrounds/dottedBottom.svg);
+  background-position: 47% 102%;
+  background-size: 236% 128%;
+  background-repeat: no-repeat;
+}
+.about__head {
+  margin-top: 0.9rem;
+}
+.about__head__title {
+  color: #3459a9;
+}
+.about__head__subtitle {
+  color: rgb(69, 69, 69);
+  margin-top: 2rem;
+}
+.about__head__desc {
+  color: #68696d;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+}
+.about__img {
+  margin-top: 4rem;
+  border-radius: 1.5rem;
+}
+.about__cards-container {
+  margin-top: 3rem;
+}
+.about__cards-container__card {
+  background-color: white;
+  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 2rem;
+  -webkit-box-shadow: 0 0 8px 8px rgb(247, 247, 247);
+          box-shadow: 0 0 8px 8px rgb(247, 247, 247);
+}
+.about__cards-container__card__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.about__cards-container__card__head__title {
+  color: #3459a9;
+}
+.about__cards-container__card__head__icon {
+  font-size: 1.8rem;
+  color: #3459a9;
+}
+.about__cards-container__card__desc {
+  color: #68696d;
+  margin-top: 1rem;
+  font-size: 1.3rem;
 }/*# sourceMappingURL=main.css.map */
