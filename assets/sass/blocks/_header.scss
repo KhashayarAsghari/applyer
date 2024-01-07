@@ -1,5 +1,6 @@
 .header {
     background-color: $color-bg-main;
+    box-shadow: 0 4px 4px 4px #f8f8f8;
 
     &__container {
         @include widthauto(90%);

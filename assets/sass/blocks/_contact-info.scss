@@ -1,0 +1,58 @@
+.contact-info {
+    @include widthauto(90%);
+    border: 2px solid $color-border-gray;
+    border-radius: 2rem;
+    padding: $padding-xxl;
+    margin-top: $margin-xxxl;
+
+    &__head {
+        @include dflex();
+        margin-top: $margin-s;
+        gap: 1rem;
+        color: $color-dark-lighter;
+        
+
+
+        &__title {
+            white-space: nowrap;
+        }
+
+        &__line {
+            width: 100%;
+            height: 6px;
+            background-color: $color-blue-light;
+
+        }
+
+    }
+
+    &__item {
+        @include dflex(center,center,column);
+        background-color: $color-blue-light;
+        border-radius: 2rem;
+        padding: $padding-xxl;
+        color: $color-dark-lighter;
+        margin-top: $margin-xxl;
+
+        &__icon {
+            font-size: 2.5rem;
+            
+        }
+
+        &__title {
+            margin-top: $margin-l;
+            font-weight: normal;
+            font-size: 1.5rem;
+        }
+
+        &__desc {
+            margin-top: $margin-xxl;
+            color: black;
+            font-weight: bold;
+            font-size: 1.3rem;
+        }
+    }
+
+
+
+}

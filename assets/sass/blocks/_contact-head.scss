@@ -1,0 +1,20 @@
+.contact-head {
+    @include widthauto(90%);
+    margin-top: 3rem;
+    
+    &__desc {
+        text-align: center;
+        font-size: 1.3rem;
+        font-weight: 400;
+        margin-top: $margin-xxxl;
+    }
+
+    &__title {
+        color: $color-dark-lighter;
+        text-align: center;
+
+        & > span {
+            color: $color-accent;
+        }
+    }
+}

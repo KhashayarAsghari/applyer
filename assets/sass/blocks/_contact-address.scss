@@ -1,0 +1,36 @@
+.contact-address {
+
+    &__item {
+        margin-top: $margin-xxxl;
+
+        &__title {
+            font-size: 1.7rem;
+        }
+
+        &__desc {
+            color: $color-text-gray;
+            margin-top: $margin-s;
+            font-size: 1.3rem;
+        }
+
+        &__phone {
+            color: $color-text-gray;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    }
+}
+
+
+.contact-addresses-container {
+
+
+    &__map {
+        display: block;
+        width: 90%;
+        border-radius: 2rem;
+        margin: auto;
+        margin-top: $margin-xxxl;
+        height: 350px;
+    }
+}
