@@ -8,6 +8,13 @@
         &> span {
             color: $color-blue;
         }
+
+        @media (min-width: 768px) {
+            font-size: 3rem;
+            @include widthauto(80%);
+
+            
+        }
     }
 
     &__desc {
@@ -15,6 +22,11 @@
         font-size: 1.3rem;
         color: $color-text-gray;
         margin-top: $margin-xl;
+
+        @media (min-width: 768px) {
+            @include widthauto(80%);
+            margin-top: 2rem;
+        }
 
     }
 
@@ -45,6 +57,18 @@
                 display: block;
                 color: $color-text-gray;
                 margin-top: $margin-l;
+            }
+        }
+
+        @media (min-width: 768px) {
+            @include widthauto(80%);
+            @include dflex(space-between, flex-start, row, wrap);
+            padding: 0;
+            margin-top: 4rem;
+
+            &__item {
+                display: block;
+                
             }
         }
     }

@@ -23,11 +23,38 @@
             margin-top: 3rem;
             font-size: 1.2rem;
         }
+
+        @media (min-width: 768px) {
+            @include dflex(space-between, flex-end);
+             @include widthauto(90%);
+             gap: 1rem;
+             margin-top: 4rem;
+             
+             &> * {
+                margin: 0;
+                flex: 1;
+
+             }
+
+             &__title {
+                font-size: 3rem;
+             }
+
+             &__subtitle {
+                font-size: 1.2rem;
+             }
+        }
     }
 
     &__img {
         margin-top: 4rem;
         border-radius: 1.5rem;
+
+        @media (min-width: 768px) {
+            display: block;
+            @include widthauto(90%);
+            margin-top: 4rem;
+        }
     }
 
     &__cards-container {
@@ -60,5 +87,17 @@
             }
         }
 
+        @media (min-width: 768px) {
+            @include dflex(space-between);
+            @include widthauto(90%);
+            margin-top: 4rem;
+
+        }
+
+    }
+
+    @media (min-width: 768px) {
+        background-size: 100% 130%;
+        background-position: 47% 102%;
     }
 }
