@@ -24,6 +24,21 @@
 
 .contact-addresses-container {
 
+    @media (min-width: 768px) {
+        @include dflex(center, flex-start);
+        @include widthauto(80%);
+        margin-top: 2rem;
+        gap: 2rem;
+
+        &>* {
+            margin-top: 0!important;
+            width: calc(100% / 2)!important;
+        }
+
+        &__map {
+            height: 400px!important;
+        }
+    }
 
     &__map {
         display: block;

@@ -13,6 +13,10 @@
         color: $color-dark-lighter;
         text-align: center;
 
+        @media (min-width: 768px){
+            font-size: 3rem;
+        }
+
         & > span {
             color: $color-accent;
         }
