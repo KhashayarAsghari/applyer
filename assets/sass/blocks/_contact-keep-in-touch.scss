@@ -3,7 +3,7 @@
     background-position: 6% 563%;
     background-size: 176% 91%;
     background-repeat: no-repeat;
-    margin-top: 6rem;
+    margin-top: 4rem;
     padding: 0 5%;
     padding-bottom: 3rem;
     text-align: center;
@@ -61,6 +61,10 @@
         }
 
         
+    }
+
+    @media (min-width: 768px) {
+        margin-top: 0;
     }
     
 }

@@ -63,7 +63,7 @@
         &__card {
             background-color: white;
             margin-bottom: 2rem;
-            padding: 1.2rem;
+            padding: 2rem;
             border-radius: 2rem;
             box-shadow: 0 0 8px 8px rgb(247, 247, 247);
 
@@ -82,7 +82,7 @@
 
             &__desc {
                 color: $color-text-gray;
-                margin-top: $margin-xl;
+                margin-top: $margin-xxl;
                 font-size: 1.3rem;
             }
         }
@@ -91,6 +91,7 @@
             @include dflex(space-between);
             @include widthauto(90%);
             margin-top: 4rem;
+            gap: 2rem;
 
         }
 

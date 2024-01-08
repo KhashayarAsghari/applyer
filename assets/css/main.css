@@ -112,6 +112,10 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.header-new.header .header__container--desk__counseling {
+  background-color: #3459a9;
+}
+
 .main-heading {
   display: none;
 }
@@ -1139,6 +1143,11 @@ h1, h2, h3, h4, h5, h6, p {
   }
 }
 
+.footer-new.footer {
+  background-color: #152445;
+  border: none;
+}
+
 .contact-head {
   width: 90%;
   margin: 0px auto;
@@ -1151,7 +1160,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-top: 2rem;
 }
 .contact-head__title {
-  color: #2f3281;
+  color: #3459a9;
   text-align: center;
 }
 @media (min-width: 768px) {
@@ -1161,6 +1170,13 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .contact-head__title > span {
   color: #d1481e;
+}
+@media (min-width: 768px) {
+  .contact-head {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 4rem;
+  }
 }
 
 .contact-info {
@@ -1220,7 +1236,7 @@ h1, h2, h3, h4, h5, h6, p {
       flex-wrap: nowrap;
   margin-top: 0.4rem;
   gap: 1rem;
-  color: #2f3281;
+  color: #3459a9;
 }
 .contact-info__head__title {
   white-space: nowrap;
@@ -1249,7 +1265,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #e5ebf7;
   border-radius: 2rem;
   padding: 1.5rem;
-  color: #2f3281;
+  color: #3459a9;
   margin-top: 1.5rem;
 }
 .contact-info__item__icon {
@@ -1328,7 +1344,7 @@ h1, h2, h3, h4, h5, h6, p {
   background-position: 6% 563%;
   background-size: 176% 91%;
   background-repeat: no-repeat;
-  margin-top: 6rem;
+  margin-top: 4rem;
   padding: 0 5%;
   padding-bottom: 3rem;
   text-align: center;
@@ -1388,6 +1404,11 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 250px;
     text-align: center;
     margin-top: 0.9rem;
+  }
+}
+@media (min-width: 768px) {
+  .contact-keep-in-touch {
+    margin-top: 0;
   }
 }
 
@@ -1467,7 +1488,7 @@ h1, h2, h3, h4, h5, h6, p {
 .about__cards-container__card {
   background-color: white;
   margin-bottom: 2rem;
-  padding: 1.2rem;
+  padding: 2rem;
   border-radius: 2rem;
   -webkit-box-shadow: 0 0 8px 8px rgb(247, 247, 247);
           box-shadow: 0 0 8px 8px rgb(247, 247, 247);
@@ -1498,7 +1519,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .about__cards-container__card__desc {
   color: #68696d;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-size: 1.3rem;
 }
 @media (min-width: 768px) {
@@ -1521,6 +1542,7 @@ h1, h2, h3, h4, h5, h6, p {
     width: 90%;
     margin: 0px auto;
     margin-top: 4rem;
+    gap: 2rem;
   }
 }
 @media (min-width: 768px) {
@@ -1587,6 +1609,7 @@ h1, h2, h3, h4, h5, h6, p {
   width: 250px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  margin-bottom: 2rem;
 }
 .team__members-container__item__img {
   border-radius: 1.2rem;

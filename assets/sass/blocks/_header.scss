@@ -57,3 +57,12 @@
 
 }
 
+
+
+.header-new.header {
+    
+    & .header__container--desk__counseling {
+        background-color: $color-blue;
+    }
+}
+
